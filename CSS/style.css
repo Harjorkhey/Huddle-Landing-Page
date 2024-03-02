@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url("../IMAGES/bg-desktop.svg"),hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:22px, 32ps ;
+}
+
+header, main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 32px;
+}
+
+h1{
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+p{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 19px;
+    padding: 24px 0;
+}
+
+.logo{
+    width: 170px;
+}
+
+.image{
+    width: 100%;
+    margin: 60px 0;
+}
+
+.details{
+    color: #fff;
+}
+
+.button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+        display: inline-block;
+        text-decoration: none;
+        color: hsl(257, 40%, 49%);
+        padding: 0.9rem 6rem;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0 10px 10px hsl(257, 40%, 39%);
+        margin: 1rem auto;
+}
+
+.button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px 0 16px 0;
+}
+
+i {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    margin: 0 16px;
+}
+
+i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 1070px) {
+    body {
+        background: url("../IMAGES/bg-desktop.svg"), hsl(257, 40%, 49%), no-repeat;
+        background-size: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+
+    header,
+    main {
+        flex-direction: row;
+        max-width: 110rem;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .img {
+        width: 62.5rem;
+    }
+
+    .details {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+        align-self: center;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+        margin: 0;
+    }
+
+    .word {
+        line-height: 1.7;
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        margin: 0;
+    }
+
+    .icons {
+        position: fixed;
+        align-self: end;
+        bottom: 0;
+        margin: 0;
+        padding: 0 0 2.5rem 0;
+    }
+
+    i {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
